@@ -1,12 +1,12 @@
 body{
     margin: 0;
-    background: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1600");
-    background-size: cover;
-
 
 }
 
 .main{
+    background: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    /*transition: filter 0.6s;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +15,9 @@ body{
     text-align: center;
 
 }
+.active.main {
+    filter: blur(5px) brightness(0.5);
+}
 .home{
     font-family: cursive;
     color: #f1f1ee;
@@ -22,7 +25,7 @@ body{
 
 .btn{
     font-family: cursive;
-   background-color: salmon;
+     background-color: salmon;
     font-size: 30px;
     height: 50px;
     border-radius: 10px;
@@ -30,11 +33,14 @@ body{
     box-shadow: 2px 2px 3px slateblue;
 }
 .btn:hover{
-background-color: #894098;
+  background-color: #894098;
     cursor: pointer;
+    /*filter: brightness(0.8);*/
+
 }
 
 .last{
+    background-color: #e7e7b4;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -46,7 +52,7 @@ background-color: #894098;
     padding: 20px;
     background-size: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(241, 21, 79, 0.3);
     opacity: 1;
     transition: all 0.7s;
 }
@@ -69,7 +75,7 @@ img{
 }
 .btnN{
 margin-left: 150px;
-    width: 100px;
+    width: 150px;
     margin-top: 20px;
     font-size: 40px;
     border-radius: 10px;
